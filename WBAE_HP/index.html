@@ -1,0 +1,409 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>WBAE_HP</title>
+      <link rel="stylesheet" href="styles/default_shadcn_theme.css">
+      <link rel="stylesheet" href="styles/fonts.css">
+      <link rel="stylesheet" href="styles/globals.css">
+      <link rel="stylesheet" href="styles/index.css">
+      <link rel="stylesheet" href="styles/theme.css">
+      <link rel="stylesheet" href="styles/custom.css">
+    </head>
+    <body>
+      <div class="min-h-screen bg-white">
+        <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+              <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 bg-[#8B1538] rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    WBAE
+                  </div>
+                  <div>
+                    <div class="text-lg font-bold text-[#8B1538]">ビジネス・アカデミック・エンタメ稲門会</div>
+                    <div class="text-xs text-gray-600">Waseda Business, Academic & Entertainment Alumni</div>
+                  </div>
+                </div>
+                <nav class="hidden lg:flex gap-6">
+                  <a href="#about" class="text-gray-700 hover:text-[#8B1538] transition-colors">稲門会について</a>
+                  <a href="#activities" class="text-gray-700 hover:text-[#8B1538] transition-colors">活動内容</a>
+                  <a href="#events" class="text-gray-700 hover:text-[#8B1538] transition-colors">イベント</a>
+                  <a href="#members" class="text-gray-700 hover:text-[#8B1538] transition-colors">メンバー</a>
+                  <a href="#join" class="text-gray-700 hover:text-[#8B1538] transition-colors">入会案内</a>
+                </nav>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <button class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                  <!-- Search icon -->
+                </button>
+                <button class="p-2 hover:bg-gray-100 rounded-full transition-colors flex items-center gap-1">
+                  <!-- Globe icon -->
+                  <span class="text-sm text-gray-700">EN</span>
+                </button>
+                <button id="menu-button" class="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
+                  <!-- Menu icon -->
+                </button>
+              </div>
+            </div>
+            <nav id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+              <a href="#about" class="block py-2 text-gray-700 hover:text-[#8B1538]">稲門会について</a>
+              <a href="#activities" class="block py-2 text-gray-700 hover:text-[#8B1538]">活動内容</a>
+              <a href="#events" class="block py-2 text-gray-700 hover:text-[#8B1538]">イベント</a>
+              <a href="#members" class="block py-2 text-gray-700 hover:text-[#8B1538]">メンバー</a>
+              <a href="#join" class="block py-2 text-gray-700 hover:text-[#8B1538]">入会案内</a>
+            </nav>
+          </div>
+        </header>
+
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+          <div class="absolute inset-0 bg-black">
+            <img src="https://images.unsplash.com/photo-1775163560631-6ff15eb2fa1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG5ldHdvcmtpbmclMjBldmVudHxlbnwxfHx8fDE3Nzc2NDg3OTV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="ネットワーキングイベント" class="w-full h-full object-cover opacity-70" />
+          </div>
+          <div class="relative z-10 text-center text-white px-4">
+            <div class="mb-6 text-lg tracking-widest">WASEDA BUSINESS, ACADEMIC & ENTERTAINMENT ALUMNI</div>
+            <h1 class="text-5xl md:text-7xl mb-6">つながる、学ぶ、楽しむ</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+              早稲田の絆で、ビジネスとアカデミック、そしてエンターテイメントの世界を広げる
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+              <button class="bg-[#8B1538] hover:bg-[#6D1028] text-white px-8 py-4 rounded-full transition-colors flex items-center gap-2 text-lg">
+                入会案内を見る
+                <!-- ArrowRight icon -->
+              </button>
+              <button class="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-full transition-colors text-lg border border-white/30">
+                イベント情報
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-16 bg-[#8B1538] text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl mb-2">500名+</div>
+                <div class="text-sm text-gray-200">会員数</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl mb-2">年50回以上</div>
+                <div class="text-sm text-gray-200">イベント開催</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl mb-2">全国15都市</div>
+                <div class="text-sm text-gray-200">活動拠点</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl md:text-4xl mb-2">創立10周年</div>
+                <div class="text-sm text-gray-200">実績と信頼</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-4xl mb-4">WBAEについて</h2>
+              <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                ビジネス・アカデミック・エンタメ稲門会（WBAE）は、早稲田大学の卒業生が
+                ビジネス、学術、エンターテイメントの分野で交流し、成長し続けるための組織です。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+              <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6">
+                  <!-- Briefcase icon -->
+                </div>
+                <h3 class="text-2xl mb-3">Business</h3>
+                <p class="text-gray-700 mb-4">ビジネス交流・起業支援・キャリア開発</p>
+                <p class="text-gray-600 text-sm leading-relaxed">同窓生間のビジネスネットワーキング、起業家支援プログラム、異業種交流会を通じて、新しいビジネス機会を創出します。</p>
+              </div>
+              <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-6">
+                  <!-- GraduationCap icon -->
+                </div>
+                <h3 class="text-2xl mb-3">Academic</h3>
+                <p class="text-gray-700 mb-4">学術研究・知識共有・生涯学習</p>
+                <p class="text-gray-600 text-sm leading-relaxed">最新の研究動向の共有、専門家による講演会、勉強会の開催など、継続的な学びの場を提供します。</p>
+              </div>
+              <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mb-6">
+                  <!-- Sparkles icon -->
+                </div>
+                <h3 class="text-2xl mb-3">Entertainment</h3>
+                <p class="text-gray-700 mb-4">懇親会・文化活動・スポーツイベント</p>
+                <p class="text-gray-600 text-sm leading-relaxed">季節ごとの懇親パーティー、文化鑑賞会、スポーツ大会など、楽しく交流できるイベントを企画します。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="activities" class="py-20 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-4xl mb-4">活動内容</h2>
+              <p class="text-gray-600 text-lg">多様なイベントで、同窓生との絆を深めます</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="relative h-64 overflow-hidden bg-gray-100">
+                  <img src="https://images.unsplash.com/photo-1675716921224-e087a0cca69a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG5ldHdvcmtpbmclMjBldmVudHxlbnwxfHx8fDE3Nzc2NDg3OTV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="ビジネスネットワーキング交流会" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                  <div class="absolute top-4 left-4 bg-[#8B1538] text-white px-3 py-1 rounded-full text-sm">
+                    Business
+                  </div>
+                  <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                    2026年6月15日
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl mb-3">ビジネスネットワーキング交流会</h3>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">業界を超えた同窓生との出会いの場。新しいビジネスチャンスや協業の可能性を探ります。経営者、起業家、ビジネスパーソンが集う貴重な機会です。</p>
+                  <button class="flex items-center gap-2 text-gray-700 hover:text-[#8B1538] transition-colors group-hover:gap-3 transition-all">
+                    イベント詳細
+                    <!-- ArrowRight icon -->
+                  </button>
+                </div>
+              </div>
+
+              <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="relative h-64 overflow-hidden bg-gray-100">
+                  <img src="https://images.unsplash.com/photo-1769839271768-aee5469799ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzZW1pbmFyJTIwY29uZmVyZW5jZXxlbnwxfHx8fDE3Nzc3OTQ1Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="特別講演会：最新ビジネストレンド" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                  <div class="absolute top-4 left-4 bg-[#8B1538] text-white px-3 py-1 rounded-full text-sm">
+                    Academic
+                  </div>
+                  <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                    2026年7月20日
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl mb-3">特別講演会：最新ビジネストレンド</h3>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">第一線で活躍する卒業生を招いた特別講演。最新のビジネストレンドや業界の動向について学び、知見を深めます。質疑応答セッションも充実。</p>
+                  <button class="flex items-center gap-2 text-gray-700 hover:text-[#8B1538] transition-colors group-hover:gap-3 transition-all">
+                    イベント詳細
+                    <!-- ArrowRight icon -->
+                  </button>
+                </div>
+              </div>
+
+              <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                <div class="relative h-64 overflow-hidden bg-gray-100">
+                  <img src="https://images.unsplash.com/photo-1768508948485-a7adc1f3427f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMG5ldHdvcmtpbmclMjBldmVudHxlbnwxfHx8fDE3Nzc2NDg3OTV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="夏季懇親パーティー" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                  <div class="absolute top-4 left-4 bg-[#8B1538] text-white px-3 py-1 rounded-full text-sm">
+                    Entertainment
+                  </div>
+                  <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                    2026年8月10日
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl mb-3">夏季懇親パーティー</h3>
+                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">カジュアルな雰囲気で楽しむ懇親パーティー。美味しい料理とドリンクを楽しみながら、同窓生との絆を深めます。新規入会者も大歓迎です。</p>
+                  <button class="flex items-center gap-2 text-gray-700 hover:text-[#8B1538] transition-colors group-hover:gap-3 transition-all">
+                    イベント詳細
+                    <!-- ArrowRight icon -->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="members" class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div class="relative h-96 rounded-2xl overflow-hidden shadow-xl">
+                <img src="https://images.unsplash.com/photo-1774094453087-0207a0cd2309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBzZW1pbmFyJTIwY29uZmVyZW5jZXxlbnwxfHx8fDE3Nzc3OTQ1Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="パネルディスカッション" class="w-full h-full object-cover"/>
+              </div>
+              <div>
+                <h2 class="text-4xl mb-6">多様なバックグラウンドを持つメンバー</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                  WBAEには、様々な業界・職種で活躍する早稲田の卒業生が集まっています。
+                  経営者、起業家、研究者、クリエイター、エンジニア、コンサルタントなど、
+                  多彩な人材との出会いが、あなたのキャリアと人生を豊かにします。
+                </p>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-3">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <!-- Network icon -->
+                    </div>
+                    <div>
+                      <h3 class="mb-1">強力なネットワーク</h3>
+                      <p class="text-gray-600 text-sm">業界を超えた人脈形成の機会</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <!-- Trophy icon -->
+                    </div>
+                    <div>
+                      <h3 class="mb-1">実績ある活動</h3>
+                      <p class="text-gray-600 text-sm">10年以上の歴史と信頼</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <!-- Users icon -->
+                    </div>
+                    <div>
+                      <h3 class="mb-1">アットホームな雰囲気</h3>
+                      <p class="text-gray-600 text-sm">初参加でも安心して交流できます</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20 bg-gradient-to-br from-[#8B1538] to-[#6D1028] text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div class="flex items-center gap-3 mb-6">
+                  <!-- Calendar icon -->
+                  <span class="text-lg">次回イベント</span>
+                </div>
+                <h2 class="text-4xl mb-6">6月ネットワーキング交流会</h2>
+                <p class="text-xl mb-8 text-gray-200">
+                  新規メンバーも大歓迎！業界を超えた出会いと学びの場にぜひご参加ください。
+                  懇親会では美味しい料理とドリンクをご用意しています。
+                </p>
+                <button class="bg-white text-[#8B1538] hover:bg-gray-100 px-8 py-4 rounded-full transition-colors text-lg flex items-center gap-2">
+                  イベントに申し込む
+                  <!-- ArrowRight icon -->
+                </button>
+              </div>
+              <div class="grid grid-cols-2 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                  <!-- Briefcase icon -->
+                  <h3 class="text-xl mb-2">ビジネスマッチング</h3>
+                  <p class="text-sm text-gray-200">新しいビジネスチャンス</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                  <!-- GraduationCap icon -->
+                  <h3 class="text-xl mb-2">特別講演</h3>
+                  <p class="text-sm text-gray-200">業界トップの知見</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                  <!-- Users icon -->
+                  <h3 class="text-xl mb-2">懇親会</h3>
+                  <p class="text-sm text-gray-200">リラックスした交流</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+                  <!-- Network icon -->
+                  <h3 class="text-xl mb-2">ネットワーキング</h3>
+                  <p class="text-sm text-gray-200">人脈を広げる機会</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="join" class="py-20 bg-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl mb-6">入会のご案内</h2>
+            <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+              WBAEは早稲田大学の卒業生なら誰でも入会できます。
+              年会費は10,000円で、すべてのイベントに参加いただけます。
+              まずは体験参加も可能ですので、お気軽にお問い合わせください。
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+              <button class="bg-[#8B1538] hover:bg-[#6D1028] text-white px-8 py-4 rounded-full transition-colors text-lg">
+                入会申し込み
+              </button>
+              <button class="border-2 border-[#8B1538] text-[#8B1538] hover:bg-[#8B1538] hover:text-white px-8 py-4 rounded-full transition-colors text-lg">
+                お問い合わせ
+              </button>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              <div class="bg-gray-50 p-6 rounded-xl">
+                <div class="text-3xl mb-2">①</div>
+                <h3 class="mb-2">入会申し込み</h3>
+                <p class="text-gray-600 text-sm">フォームから必要事項を入力</p>
+              </div>
+              <div class="bg-gray-50 p-6 rounded-xl">
+                <div class="text-3xl mb-2">②</div>
+                <h3 class="mb-2">年会費のお支払い</h3>
+                <p class="text-gray-600 text-sm">10,000円（年間）</p>
+              </div>
+              <div class="bg-gray-50 p-6 rounded-xl">
+                <div class="text-3xl mb-2">③</div>
+                <h3 class="mb-2">イベント参加</h3>
+                <p class="text-gray-600 text-sm">すべてのイベントに参加可能</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="bg-gray-900 text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+              <div>
+                <h3 class="mb-4">活動内容</h3>
+                <ul class="space-y-2 text-gray-400">
+                  <li><a href="#" class="hover:text-white transition-colors">ビジネス交流会</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">学術セミナー</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">エンターテイメント企画</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">ネットワーキング</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="mb-4">イベント情報</h3>
+                <ul class="space-y-2 text-gray-400">
+                  <li><a href="#" class="hover:text-white transition-colors">定例会</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">特別講演会</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">懇親会</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">年間スケジュール</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="mb-4">会員サービス</h3>
+                <ul class="space-y-2 text-gray-400">
+                  <li><a href="#" class="hover:text-white transition-colors">入会案内</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">会員特典</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">お問い合わせ</a></li>
+                  <li><a href="#" class="hover:text-white transition-colors">よくある質問</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="mb-4">フォローする</h3>
+                <div class="flex gap-4">
+                  <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#8B1538] transition-colors">
+                    <!-- Facebook icon -->
+                  </a>
+                  <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#8B1538] transition-colors">
+                    <!-- Twitter icon -->
+                  </a>
+                  <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#8B1538] transition-colors">
+                    <!-- Instagram icon -->
+                  </a>
+                  <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#8B1538] transition-colors">
+                    <!-- Youtube icon -->
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+              <div class="mb-4 md:mb-0">© 2026 ビジネス・アカデミック・エンタメ稲門会 (WBAE). All rights reserved.</div>
+              <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a>
+                <a href="#" class="hover:text-white transition-colors">サイトマップ</a>
+                <a href="#" class="hover:text-white transition-colors">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
+  
